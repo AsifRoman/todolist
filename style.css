@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image: url(bird-black-and-white-dark-silhouette-236296.jpg);
+	background-repeat: no-repeat, repeat; 
+    height: 100%;
+    box-sizing: border-box;
+ 	 background-size: cover; /* Resize the background image to cover the entire container */
+ }
+
+h1 {
+	color: lime;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+}
+
+.title{
+	color: lime;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.rotate{
+	font-weight: bold;
+	color: crimson;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: lime;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.5;
+	background-color: red;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid yellow;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+
+/* BUTTON STYLING */
+.button {
+  border-radius: 4px;
+  background-color: #ED213A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* END BUTTON STYLING */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 80px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background: #29323c;  /* fallback for old browsers */
+  border-top: 0;
+  color: white;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hope, #quotes {
+  line-height: 2;
+}
+#hope > span, #quotes > span {
+  font-size: 20px;
+}
+#quotes p {
+  color: #FF0000;
+  font-size: 20px;
+  line-height: 1.8;
+}
+#quote {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 10px;
+}
+#quote p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
